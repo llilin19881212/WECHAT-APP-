@@ -1,0 +1,77 @@
+
+ 
+ <view class="container">
+ <block wx:if="{{hasshow >1}}">
+  
+  <view id="uploadnews">
+  <form catchsubmit="messageSubmit" catchreset="formReset">
+    
+
+              <input class="title-input"  maxlength="20" name='title' placeholder="这里输入标题" />
+             <input class="author-input"  maxlength="10" name='author' placeholder="这里输入作者名" />
+               <textarea class="article-input"  maxlength="5000" name='article' placeholder="这里编辑文章" />
+        <button class="send" type="primary" formType="submit"  >发表</button>
+        
+        <button class="reset" type="warn" formType="reset">清空</button>
+        <button class="preview" bindtap='preview'  type="primary">预览文章</button>
+   </form>
+   
+   </view>
+    </block>
+
+   <block wx:if="{{hasshow >1}}">
+   <view class="scroll-view-item1">
+          <image src="{{imageSrc}}" class="image" ></image>
+          <button type="primary" bindtap='reupload'  >重新上传图片</button>
+          </view>
+        </block>
+  
+   <block wx:if="{{hasshow <1}}">
+  
+  <view id="uploadnews">
+  <form catchsubmit="messageSubmit1" catchreset="formReset">
+    
+
+            
+              <input class="title-input"  maxlength="20" name='title' placeholder="这里输入标题" />
+               <textarea class="article-input"  maxlength="5000" name='article' placeholder="这里编辑文章" />
+        <button class="send" type="primary" formType="submit"  >发表</button>
+        
+        <button class="reset" type="warn" formType="reset">清空</button>
+  
+   </form>
+   
+   </view>
+    </block>
+
+   <block wx:if="{{hasshow<1}}">
+   <view class="scroll-view-item1">
+          <image src="{{imageSrc}}" class="image" ></image>
+         
+          </view>
+        </block>
+  
+
+  
+
+    <block wx:if="{{hasshow === 1}}">
+    <view class="scroll-view-item1">
+       <image  class="plus" src="/image/43.png" bindtap='chooseImage' ></image>
+       <view class="image-plus-text">点击上传文章图片</view>
+    </view>
+ <view class="space-50"></view>
+    <view class="scroll-view-item1">
+       <image  class="plus" src="/image/43.png" bindtap='chooseImage1' ></image>
+       <view class="image-plus-text">点击上传置顶海报图片</view>
+    </view>
+    </block>
+  
+  
+      </view>
+   
+      
+
+
+
+
+

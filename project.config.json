@@ -1,0 +1,10 @@
+{
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wx3874ef0027a36124",
+	"projectname": "24hrnews",
+	"condition": {}
+}

@@ -1,0 +1,19 @@
+
+<view class="container">
+
+      <view id= "main1">
+ 
+           <view class="title" >{{title}}</view>
+           <view class="space-50"></view>  
+            <view class="author" >{{author}}</view>
+             <view class="space-20"></view>
+            <image class="image1" src="https://waferpreview-1257041495.cos.ap-guangzhou.myqcloud.com/{{image}}" > </image>
+            
+            <view class="space-20"></view>
+            <text class="article" >{{article}}</text>
+                                      
+                    
+
+            </view>           
+               </view>           
+     

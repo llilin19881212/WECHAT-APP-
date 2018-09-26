@@ -1,0 +1,56 @@
+
+
+ 
+
+
+<view class="container">
+   <button class="send" bindtap='delarticle' type='warn' >删除文章</button>  
+
+ <view class="scroll-view-item2" catchtap='news1'  
+ style="background-image: url('https://waferpreview-1257041495.cos.ap-guangzhou.myqcloud.com/{{image1}}');background-size: cover">
+      <view id= "main1">
+     <view class="title" >{{title1}}</view>
+             
+            </view>                    
+       </view>
+        <view class="scroll-view-item" catchtap='news2'
+        style="background-image: url('https://waferpreview-1257041495.cos.ap-guangzhou.myqcloud.com/{{image2}}');background-size: cover">
+      <view id= "main1">
+     <view class="title" >{{title2}}</view>
+             
+            </view>
+       </view>
+        <view class="scroll-view-item" catchtap='news3'
+        style="background-image: url('https://waferpreview-1257041495.cos.ap-guangzhou.myqcloud.com/{{image3}}');background-size: cover">
+      <view id= "main1">
+     <view class="title" >{{title3}}</view>
+             
+      
+            </view>
+       </view>
+
+
+
+
+
+
+  
+ <block wx:for="{{loadarticles}}" wx:key="artnum"> 
+ <view class="scroll-view-item"
+ style="background-image: url('https://waferpreview-1257041495.cos.ap-guangzhou.myqcloud.com/{{item.img}}');background-size: cover">
+ 
+      
+        <view id= "main1">
+           <view class="title" >{{item.title}}</view>
+            </view>
+     
+      
+      
+      <view id= "main2">
+         <navigator url="/pages/index/editarticle/preview1?artnum={{item.artnum}}" hover-class="navigator-hover" class='nav'></navigator>
+            </view>
+       </view>
+      
+     
+  </block>
+  </view>

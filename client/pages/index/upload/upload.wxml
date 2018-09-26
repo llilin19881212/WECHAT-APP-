@@ -1,0 +1,19 @@
+
+
+
+<view class="container">
+
+<view class="scroll-view-item1" 
+ style="background-image: url('{{tempFilePath}}');background-size: 100%">
+ 
+ </view>
+ 
+
+
+<view class="scroll-view-item" >
+
+<textarea>提供新闻素材/成为作者/小程序BUG 请加群连系群主，谢谢支持！！！</textarea>
+
+</view>
+
+</view>

@@ -1,0 +1,48 @@
+page{
+  background-color: rgb(231, 231, 231)
+
+}
+
+.top-image{
+    position: absolute;
+    top: 0;
+    height: 1220rpx;
+    left: 0;
+    z-index: 0;
+    border-radius: 20rpx;
+    width: 100%;}
+
+
+.container .scroll-view-item1 {
+    top:70rpx;
+    height:860rpx;
+    width:600rpx;
+    border-radius: 20rpx;
+    margin-bottom: 0rpx;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    background: black;
+    font-size: 40rpx;
+  
+}
+
+
+.container .scroll-view-item {
+    top:100rpx;
+    height:360rpx;
+    width:600rpx;
+    border-radius: 30rpx;
+    margin-bottom: 0rpx;
+    margin-left: 60rpx;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: rgb(231, 231, 231);
+    font-size: 40rpx;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  
+}
+
+

@@ -1,0 +1,28 @@
+
+ 
+ <view class="container">
+ 
+  
+
+  
+
+    <view class="scroll-view-item1">
+       <image  class="plus" src="/image/66.jpg" bindtap='sendart' ></image>
+       <view class="image-plus-text">点击发表文章与海报</view>
+    </view>
+ <view class="space-50"></view>
+    <view class="scroll-view-item1">
+       <image  class="plus" src="/image/55.jpg" bindtap='publicart' ></image>
+       <view class="image-plus-text">点击上管理文章与海报</view>
+    </view>
+   
+  
+  
+      </view>
+   
+      
+
+
+
+
+

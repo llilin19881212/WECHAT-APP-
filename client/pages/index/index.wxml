@@ -1,0 +1,65 @@
+ 
+
+
+ <view class="userinfo">
+
+        <image
+            class="userinfo-avatar"
+            src="{{logged ?userInfo.avatarUrl : './user-unlogin.png'}}"
+            background-size="cover"
+        ></image>
+        <view>
+            <button class="userinfo-nickname" wx:if="{{!logged}}" open-type="getUserInfo" bindgetuserinfo="login">点击登录</button>
+            <text class="userinfo-nickname" wx:else>{{userInfo.nickName}}</text>
+        </view>
+    </view>
+
+   
+    <view class='messageCase'>
+     
+     
+      <view class='messageWrap' catchtap='enshrineClick'>
+        <text class='messageTop'>关注</text>
+        <text>{{sumTotal}}</text>
+      </view>
+
+       <image class='halving-line' src='/image/icon/vertical.png'></image>
+      <view class='messageWrap' catchtap='enshrineClick'>
+        <text class='messageTop'>金币</text>
+        <text>{{collectTotal}}</text>
+      </view>
+      </view>
+      
+  
+
+  <view class='myList' wx:if="{{ismobile}}">
+      <view class='myList-single' catchtap='registered'>
+        <view>
+          <image class='myListImages' src='/image/icon/anchor_join.png'></image>
+          <text class='mylistText'>提供素材/成为作者</text>
+        </view>
+        <image class='myListArrows' src='/image/icon/home_arrow.png'></image>
+        
+      
+      </view>
+    </view>
+
+    <view class='myList'>
+    <view class='myList-single' catchtap='editarticle'>
+      <view>
+        <image class='myListImages' src='/image/icon/zg.png'></image>
+        <text class='mylistText'>文章发布管理</text>
+      </view>
+      <image class='myListArrows' src='/image/icon/home_arrow.png'></image>
+    </view>
+  </view>
+
+  <view class='myList'>
+    <view class='myList-single' catchtap='aboutMe'>
+      <view>
+        <image class='myListImages' src='/image/icon/guanyuwome.png'></image>
+        <text class='mylistText'>关于我们</text>
+      </view>
+      <image class='myListArrows' src='/image/icon/home_arrow.png'></image>
+    </view>
+  </view>

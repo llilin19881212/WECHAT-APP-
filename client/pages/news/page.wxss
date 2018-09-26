@@ -1,0 +1,19 @@
+#main1{width: 700rpx;top:30rpx;margin: 10rpx 10rpx 10rpx 10rpx;height: 800rpx;}
+.title{font-weight:800;font-size:26px; }
+.author{font-size:16px;}
+.image1{  align-items: center; border-radius: 20rpx; margin-left: 50rpx;}
+.article{font-size:16px; }
+.zan {align-items: center; border-radius: 40rpx;margin-left: 240rpx; width: 25%;height:15%;margin-top: 20rpx}
+
+.container .space-50 {
+        height: 50rpx;
+    width: 100%;
+}
+.container .space-20 {
+        height: 20rpx;
+    width: 100%;
+}
+.container .space-10 {
+        height: 10rpx;
+    width: 100%;
+}
